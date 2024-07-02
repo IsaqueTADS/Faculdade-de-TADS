@@ -6,38 +6,40 @@ using namespace std;
 
 int main(){
     setlocale(LC_ALL, "portuguese");
-    double years, months, qday, price,money,pcigarette;
-    int opc;
-    system("cls");
-    cout<<"Você fuma?"<<endl;
-    cout<<"[1] Sim\n";
-    cout<<"[2] Não\n";
-    cin>>opc;
-    system("cls");
+        double years, days, qday, price,money,pcigarette;
+        int opc;
+        system("cls");
+        cout<<"Você fuma?"<<endl;
+        cout<<"[1] Sim\n";
+        cout<<"[2] Não\n";
+        cin>>opc;
+        system("cls");
 
-    if ( opc == 1) {
-        cout<<"Quantos anos de fumante você você tem? "<<endl;
-        cin>>years;
-        cout<<"Quantos cigarro você fuma por dia? "<<endl;
-        cin>>qday;
-        cout<<"Qual o preço da carteira com 20 cigarros? "<<endl;
-        cin>>price;
+        if ( opc == 1) {
+            cout<<"Quantos anos de fumante você você tem? "<<endl;
+            cin>>years;
+            cout<<"Quantos cigarro você fuma por dia? "<<endl;
+            cin>>qday;
+            cout<<"Qual o preço da carteira com 20 cigarros? "<<endl;
+            cin>>price;
 
-        pcigarette = price / 20;
+            pcigarette = price / 20;
+            //calcula o preço de cada unidade de cigarro
 
-        qday *= pcigarette;
+            days = years * 365;
+            //calcula quantidade de dias fumados
 
-        months = years * 360;
 
-        money = months *qday;
+            money = (days * qday) * pcigarette;
+            //calculo do valor gasto
 
-        cout<<"Fumando por "<<years<<" anos você gastou "<<money<<" Reais"<<endl;
+            cout<<"Fumando por "<<years<<" anos você gastou "<<money<<" Reais"<<endl;
 
-        
+            
 
-    }else {
-        cout<<"Parabens tenha um otimo dia ??";
-    }
+        }else {
+            cout<<"Parábens, tenha um otimo dia ??"<<endl;
+        }
     
    
 
