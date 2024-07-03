@@ -14,13 +14,11 @@ int main (){
         cout<<"Digite um numero qualquer que seja inteiro "<<endl;
         cin>>number;
 
-        cout<<"[ERRO] Digite um numero inteiro"<<endl;
-
         if( number %2 == 0){
 
-            cout<<number<<" Ã© par "<<endl;
+            cout<<number<<" é par "<<endl;
         }else {
-            cout<<number<<" Ã© impar "<<endl;
+            cout<<number<<" é impar "<<endl;
 
         }
 

@@ -8,16 +8,19 @@ using namespace std;
 int main (){
 
     setlocale(LC_ALL,"portuguese_Brazil");
-    float number, resvalue;
+    int number;
 
-    cout<<"digite um nÃºmero qualquer "<<endl;
+    cout<<"digite um número qualquer "<<endl;
     cin>>number;
 
     if(number %2 == 0 && number %3 == 0){
 
-        cout<<number<< "Ã© divisivel por 2 e por 3"<<endl
+        cout<<number<< " é divisivel por 2 e por 3 ao mesmo tempo"<<endl;
+
     }else{
-        cout<<number<<"nÃ£o Ã© divisivel por 2 e 3"
+
+        cout<<number<<" não é divisivel por 2 e 3 ao mesmo tempo"<<endl;
+        
     }
 
 

@@ -8,20 +8,21 @@ using namespace std;
 int main (){
 
     setlocale(LC_ALL,"portuguese_Brazil");
-    float number, respos, resnega;
+    float number, varres;
+    
 
-    cout<<"Digite um nÃºmero qualquer"<<endl;
+    cout<<"Digite um número qualquer"<<endl;
     cin>>number;
 
-    if( number %2 == 0){
+    if ( number >= 0 ){
 
-        respos = number * 2;
+       varres = number * 2;
 
-        cout<<"O dobro de "<<number<<" Ã© "<<respos<<endl;
+        cout<<"O dobro de "<<number<<" é "<<varres<<endl;
 
-    }else{
-        resnega = number * 3;
-        cout<<"O triplo de "<<number<<" Ã© "<<resnega<<endl;
+    } else {
+        varres = number * 3;
+        cout<<"O triplo de "<<number<<" é "<<varres<<endl;
     }
 
     return 0;
