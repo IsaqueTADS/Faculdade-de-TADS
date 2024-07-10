@@ -18,10 +18,10 @@ int main (){
 
         if ( lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1){
 
-            cout<<"É um triângulo! "<<endl;
+            cout<<"ï¿½ um triï¿½ngulo! "<<endl;
         }else{
 
-            cout<<"Não é um triângulo! "<<endl;
+            cout<<"Nï¿½o ï¿½ um triï¿½ngulo! "<<endl;
 
         }
 
