@@ -16,16 +16,16 @@ int main (){
 
     if ( value1 < value2){
 
-        cout<<value1<<" é menor que "<<value2;
+        cout<<value1<<" ï¿½ menor que "<<value2;
 
     }else{
-        cout<<value2<<" é mmenor que "<<value1;
+        cout<<value2<<" ï¿½ mmenor que "<<value1;
     }
         
         
         
         
-
+    
     return 0;  
 }
   

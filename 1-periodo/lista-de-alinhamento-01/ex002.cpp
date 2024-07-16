@@ -14,7 +14,7 @@ int main (){
     cout<<"Qual o valor do livro? "<<endl;
     cin>>value;
 
-    discount = DESCONTO * value;
+    discount = value - ( DESCONTO * value);
 
     cout<<"O livro com desconto, sai por: "<<discount<<endl;
 
