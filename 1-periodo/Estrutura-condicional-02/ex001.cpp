@@ -34,7 +34,7 @@ int main (){
 
     }else{
 
-        cout<<"Nota inválida! "<<endl;
+        cout<<"Nota invï¿½lida! "<<endl;
 
     }
 

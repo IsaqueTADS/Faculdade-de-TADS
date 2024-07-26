@@ -18,7 +18,7 @@ int main (){
 
     }else if ( age >= 8 && age >= 10){
 
-        cout<<"Atleta infntil (B) "<<endl;
+        cout<<"Atleta infantil (B) "<<endl;
 
     }else if ( age >=11 && age <= 13){
 
