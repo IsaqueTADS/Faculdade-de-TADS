@@ -9,7 +9,6 @@ int numMeses = 12;
 float somaMes(float temperatura[], int numMeses);
 
 int main (){
-
     
     for ( int i = 0; i < numMeses ; i ++ ){
 
@@ -29,8 +28,6 @@ int main (){
             cout<<"Mes: "<<j+1<<" esta acima da media\ntemperatura de: "<<temperatura[j]<<endl;
         }
     }
-
-
 
     return 0;
 }
