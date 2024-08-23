@@ -4,17 +4,27 @@ using namespace std;
 
 int main (){
 
-    int num = 0;
+    int num = -1, divExata = 0, diviNexa = 0;
+    float divisao = 0;
 
     cout<<"Digite um numero inteiro qualquer! "<<endl;
     cin>>num;
 
-    if ( num == 2 || num == 3 ){
-        cout<<num<<" e um numero primo! "<<endl;
-    }else if ( num % 2 == 0 || num % 3 == 0  || num % 5 == 0 || num % 7 == 0){
-        cout<<num<<" nao e um numero primo "<<endl;
+    for ( int i = 1; i <= 100; i ++ ){
+        divisao = num % i;
+        
+        if ( divisao == 0 ){
+            divExata++;
+        }else {
+            diviNexa++;
+        }
+        
+    }
+
+    if ( divExata == 2 ){
+        cout<<num<<" e um numero primo "<<endl;
     }else{
-        cout<<num<<" e um numero primo! "<<endl;
+        cout<<num<<" nao e um numero primo! "<<endl;
     }
 
 
