@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstdlib> //para rand()
+#include <ctime> //para time ()
 
 using namespace std;
 
@@ -12,7 +14,10 @@ int main (){
         vetor [i] = i;
         
     }
-    int numAleatorio = vetor[303];
+    srand(time(0));
+
+    int indiceAleatorio = rand() % 501;
+    int numAleatorio = vetor[indiceAleatorio];
     cout<<"Tente acertar o numero magico de 0 a 500 "<<endl;
     do{cin>>chute;
         
@@ -30,7 +35,7 @@ int main (){
     } while ( chute != numAleatorio );
     
     cout<<"Voce acertou era: "<<numAleatorio<<endl;
-    
+
     if ( tentativas >= 1 && tentativas <= 3 ){
         cout<<"muito sortudo\nTentativas: "<<tentativas<<endl;
     }
