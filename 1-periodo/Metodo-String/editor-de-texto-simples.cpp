@@ -52,7 +52,7 @@ int main (){
         cin>>end;
         copia = text1.substr(start,end);
 
-        cout<<"Origial "<<text1<<endl;
+        cout<<"Original "<<text1<<endl;
         cout<<"Resultado "<<copia<<endl;
 
         break;
