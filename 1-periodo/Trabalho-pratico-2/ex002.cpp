@@ -40,7 +40,7 @@ int main (){
 
     cout<<"A media das idades e: "<<mediaIdades<<endl;
     cout<<"Quantidade de pessoas com mais de 90kg e inferior a 1.50 e : "<<pessoas90kg<<endl;
-    cout<<"A porcentagem de idade entre 10 e 30 anos : "<<faixaEtaria<<"\nE pessoas que medem mais de 1m90 "<<pessoas90kg<<"\nResultado: "<<porcentagem<<"%"<<endl;
+    cout<<"A porcentagem de idade entre 10 e 30 anos : "<<faixaEtaria<<"\nE pessoas que medem mais de 1m90 "<<altura1e90<<"\nResultado: "<<porcentagem<<"%"<<endl;
 
 
 

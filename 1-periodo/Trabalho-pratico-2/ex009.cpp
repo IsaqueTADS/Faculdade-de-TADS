@@ -4,7 +4,7 @@ using namespace std;
 
 int main (){
 
-    int num = -1, divExata = 0, diviNexa = 0;
+    int num = -1, divExata = 0;
     float divisao = 0;
 
     cout<<"Digite um numero inteiro qualquer! "<<endl;
@@ -15,10 +15,8 @@ int main (){
         
         if ( divisao == 0 ){
             divExata++;
-        }else {
-            diviNexa++;
         }
-        
+ 
     }
 
     if ( divExata == 2 ){
