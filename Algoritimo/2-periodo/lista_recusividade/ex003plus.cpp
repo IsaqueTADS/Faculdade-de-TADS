@@ -19,5 +19,8 @@ int mdc (int x, int y){
         return x;
     }
 
-    return mdc(y, x % y);
+    cout<<"y"<<y<<endl;
+    cout<<"x"<<x<<endl;
+
+    return mdc , x % y);
 }
