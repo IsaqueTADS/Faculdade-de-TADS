@@ -6,7 +6,7 @@ int contaDigitos (int number, int cont = 1);
 
 int main (){
 
-   int number = 45689;
+   int number = 100;
    
    int res = contaDigitos(number);
    
