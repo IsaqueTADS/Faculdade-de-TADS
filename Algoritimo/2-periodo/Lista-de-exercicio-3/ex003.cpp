@@ -27,7 +27,9 @@ int resD = cont;
  return resD;
 }
 
-// cout << number << endl;
+cout << number << endl;
+cout << cont<< endl;
+
 
 return contaDigitos(number/10, cont + 1);
 
