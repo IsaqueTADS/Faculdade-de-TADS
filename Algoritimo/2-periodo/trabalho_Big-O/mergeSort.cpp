@@ -7,7 +7,7 @@ void merge(vector<int>& array, int esquerda, int meio, int direita);
 void mergeSort(vector<int>& array, int esquerda, int direita);
 
 int main (){
-    vector<int> array = {38,27,43,3,9,82,10};
+    vector<int> array = {38,27,43,3,9,82,10,-1};
     int n = array.size();
 
     cout<<"Array desordenado"<<endl;
@@ -17,7 +17,7 @@ int main (){
     mergeSort(array, 0, n -1);
 
     cout<<"Array ordenado"<<endl;
-    for(int x : array) cout<<x <<" ";
+    for(int x : array) cout<<x <<" "; 
     cout<< endl;
 
 
