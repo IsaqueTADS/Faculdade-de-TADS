@@ -15,6 +15,7 @@ struct Lista
     void criar();
     void inserir (int value);
     void imprimir ();
+    void contador();
     
 };
 
@@ -28,6 +29,7 @@ int main (){
     nova.inserir(170);
     nova.inserir(12);
     nova.imprimir();
+    nova.contador();
 
 
 
@@ -78,6 +80,19 @@ void Lista::imprimir (){
         aux = aux -> proximo;
     }
        
+    }
+}
+
+void Lista::contador(){
+    int cont = 0;
+    No* aux = primeiroNo;
+    if (primeiroNo == NULL) cout<<"vazia";
+    else {
+    while(aux  != NULL){
+        cont ++;
+        aux = aux -> proximo;
+    }
+       cout<<"quantidade: "<<cont<<endl;
     }
 }
 
