@@ -34,8 +34,6 @@ int main (){
     nova.contador();
     nova.procurar(170);
     nova.excluir();
-    nova.excluir();
-    nova.excluir();
     nova.imprimir();
     nova.procurar(170);
 
