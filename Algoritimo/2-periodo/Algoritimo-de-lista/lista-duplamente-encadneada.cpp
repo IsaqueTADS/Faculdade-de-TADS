@@ -34,7 +34,7 @@ void ListaDupla::inserir(int valor){
     novoNo -> valor = valor;
 
     if (primeiroNo == NULL){
-        primeiroNo = NULL;
+        primeiroNo = novoNo;
     }
     else {
         No* aux = primeiroNo;
