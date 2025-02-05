@@ -19,7 +19,7 @@ struct ListaDupla
     void pesquisar(int procurado);
     void exibir();
     void excluirDoMeioPP();
-    void excluirDoMeio(No *valor);
+    void excluirDoMeio(No *NOvalor);
     No *PesquisarNo(int valor);
     void exluirNoPesquisado(int valor);
 };
@@ -31,13 +31,10 @@ int main()
     oi.criar();
     oi.inserir(12);
     oi.inserir(133);
-    oi.inserir(125);
-    oi.inserir(1);
-    oi.inserir(1200);
-    oi.inserir(1260);
-    oi.inserir(3);
 
-    oi.exluirNoPesquisado(120);
+    oi.excluirFinal();
+
+    // oi.exluirNoPesquisado(133);
     cout << endl;
     oi.exibir();
 
@@ -85,7 +82,12 @@ void ListaDupla::excluirFinal()
             aux = aux->proximo;
         }
         No *aux2 = aux->anterior;
-        aux2->proximo = NULL;
+
+        if (aux2 != NULL)
+            aux2->proximo = NULL;
+        else
+            primeiroNo = NULL;
+
         delete aux;
     }
 }
@@ -182,24 +184,22 @@ void ListaDupla::excluirInicio()
 
 void ListaDupla::excluirDoMeio(No *valor)
 {
-
-    No *aux = valor;
-    No *aux2 = aux->anterior;
-    No *aux3 = aux->proximo;
+    No *aux2 = valor->anterior;
+    No *aux3 = valor->proximo;
 
     aux2->proximo = aux3;
     aux3->anterior = aux2;
 
-    delete aux;
+    delete valor;
 }
 
-No *ListaDupla::PesquisarNo(int valor)
+No *ListaDupla::PesquisarNo(int NOvalor)
 {
 
     No *aux = primeiroNo;
     while (aux)
     {
-        if (aux->valor == valor)
+        if (aux->valor == NOvalor)
             return aux;
         aux = aux->proximo;
     }
@@ -212,20 +212,21 @@ No *ListaDupla::PesquisarNo(int valor)
 void ListaDupla::exluirNoPesquisado(int valor)
 {
 
-    if (primeiroNo == NULL) cout << "Lista vazia";
+    if (primeiroNo == NULL)
+        cout << "Lista vazia";
     else
     {
-        No *criminoso = PesquisarNo(valor);
+        No *aux = PesquisarNo(valor);
 
-        if (!criminoso)
+        if (!aux)
             cout << "valor: " << valor << " nao econtrado na lista " << endl;
-        else if (criminoso == primeiroNo)
+        else if (aux == primeiroNo)
             excluirInicio();
-        else if (criminoso->anterior != NULL && criminoso->proximo == NULL)
+        else if (aux->anterior != NULL && aux->proximo == NULL)
             excluirFinal();
         else
         {
-            excluirDoMeio(criminoso);
+            excluirDoMeio(aux);
         }
     }
 }
